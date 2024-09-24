@@ -1,0 +1,10 @@
+{
+    "id": "clearCommands",
+    "name": "ClearCommands",
+    "author": "SirHartley",
+    "version": "1.0.f",
+    "description": "Additional Console Commands to get rid of pesky hobbits and other fleets.",
+    "gameVersion": "0.97a",
+    "utility":"true",
+    "jars":["jars/ClearCommands.jar"],
+}

@@ -1,0 +1,25 @@
+1.0.f
+Adjusted - Added defending fleets to the exception list for cSmartClear
+Adjusted - Added fleets that are tagged to be ignored by other fleets to the exception list for cSmartClear
+Adjusted - Accounted for fleets with unique ships and ships with a forced loadout (likely mod-added bounties) to not be cleared by any command
+Fixed - No longer clears Seeker bosses
+
+1.0.e
+Fixed - No longer clears Ziggurat Fleet
+
+1.0.c
+Added - listNearbyFleets [range] - Lists all ships in the star system. If a range is specified, lists them in the range.
+Added - cclearModularShips [all/allWithStations] - Clears all modular ships with the VariantSource.REFIT in the star system (https://fractalsoftworks.com/forum/index.php?topic=19655.0). With [all], clears every modular ship in the star system.
+
+1.0.b
+Added - csmartClear - clears any abnormal fleet counts while trying to cause minimal impact on the game
+Added - cfleetReport <FactionID> (displays detailed, faction specific report)
+Added - cfleetReport now displays listeners
+Added - Fleet Report now reports routes by dynamic categories (Sometimes sorts wrong).
+Added - memory key to exclude fleet from being cleared [$clearCommands_no_remove]
+Adjusted - Fleet Report formatting
+Adjusted - Report now displays faction IDs
+Fixed - Some inaccuracy
+
+1.0.a
+Added - Initial Release
