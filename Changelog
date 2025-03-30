@@ -1,3 +1,8 @@
+1.0.g
+Adjusted - Updated for 0.98a
+Adjusted - Blacklisted Threat and Dweller fleets from being cleared by csmartclear
+Adjusted - Blacklisted RAT Abyss fleets from being cleared by csmartclear
+
 1.0.f
 Adjusted - Added defending fleets to the exception list for cSmartClear
 Adjusted - Added fleets that are tagged to be ignored by other fleets to the exception list for cSmartClear

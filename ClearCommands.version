@@ -6,6 +6,12 @@
     {
         "major":1,
         "minor":0,
-        "patch":"f"
+        "patch":"g"
     },
+
+       #Link towards a direct download, fetched from the online version file
+            "directDownloadURL":"https://github.com/SirHartley/ClearCommands/releases/download/1.1.d/Substance.Abuse1.1.d.zip",
+
+            #Link towards a directly accessible text file, which can be used to display a changelog ingame, is fetched from the online version file.
+            "changelogURL":"https://raw.githubusercontent.com/SirHartley/Substance.Abuse.Legacy/refs/heads/master/Changelog",
 }

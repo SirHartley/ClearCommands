@@ -5,6 +5,7 @@ import com.fs.starfarer.api.campaign.CampaignFleetAPI;
 import com.fs.starfarer.api.campaign.FactionAPI;
 import com.fs.starfarer.api.campaign.LocationAPI;
 import com.fs.starfarer.api.impl.campaign.fleets.RouteManager;
+import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.util.Pair;
 import org.lazywizard.console.BaseCommand;
 import org.lazywizard.console.CommonStrings;
@@ -64,6 +65,9 @@ public class clearCommands_smartClear implements BaseCommand
         boolean actuate = false;
         for(Map.Entry<String, Float> entry : factionFleetCount.entrySet()){
             if(entry.getValue() > limit || entry.getValue() > 100f) {
+                if (Factions.THREAT.equals(entry.getKey()) || Factions.DWELLER.equals(entry.getKey()) || entry.getKey().contains("rat_abyssals")){
+                    Console.showMessage("Skipping Fleets of Faction " + entry.getKey());
+                }
                 clearFleetsOfFaction(entry.getKey());
                 actuate = true;
             }

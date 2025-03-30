@@ -8,8 +8,10 @@ import com.fs.starfarer.api.campaign.LocationAPI;
 import com.fs.starfarer.api.combat.ShipVariantAPI;
 import com.fs.starfarer.api.commands.ids.clearCommands_Ids;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
+import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.ids.MemFlags;
 import com.fs.starfarer.api.impl.campaign.ids.Tags;
+import com.fs.starfarer.campaign.Faction;
 import org.lazywizard.console.BaseCommand;
 import org.lazywizard.console.CommonStrings;
 import org.lazywizard.console.Console;
@@ -74,7 +76,6 @@ public class clearCommands_clearFleets implements BaseCommand
 
         //clear fleets
         for (CampaignFleetAPI fleet : campaignFleetAPIS){
-
             //check for important
             if(fleet.isPlayerFleet()
                     || fleet.isStationMode()
