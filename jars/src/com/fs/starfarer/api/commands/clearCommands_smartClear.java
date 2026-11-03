@@ -67,6 +67,7 @@ public class clearCommands_smartClear implements BaseCommand
             if(entry.getValue() > limit || entry.getValue() > 100f) {
                 if (Factions.THREAT.equals(entry.getKey()) || Factions.DWELLER.equals(entry.getKey()) || entry.getKey().contains("rat_abyssals")){
                     Console.showMessage("Skipping Fleets of Faction " + entry.getKey());
+                    continue;
                 }
                 clearFleetsOfFaction(entry.getKey());
                 actuate = true;
