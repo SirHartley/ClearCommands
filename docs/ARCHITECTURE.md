@@ -1,6 +1,6 @@
 # Architecture
 
-Technical routing for the current implementation, checked against game `0.98a-RC8`. Code paths below are relative to `jars/src/com/fs/starfarer/api/commands/`; data paths are repository-relative. Search the named owner before adding another implementation.
+Technical routing for the current implementation, checked against game `0.98.5a-RC6`. Code paths below are relative to `jars/src/com/fs/starfarer/api/commands/`; data paths are repository-relative. Search the named owner before adding another implementation.
 
 | Reference | Scope |
 |---|---|
