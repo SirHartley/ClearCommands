@@ -1,6 +1,6 @@
 # ClearCommands
 
-Starsector utility mod (game `0.98a`) that adds six campaign console commands to Console Commands: clear excess fleets (`csmartClear`, `cclearFleets`, `cclearAllFleets`), remove modular ships (`cclearModularShips`), and report fleets (`cfleetReport`, `listNearbyFleets`).
+Starsector utility mod (game `0.98.5a`) that adds six campaign console commands to Console Commands: clear excess fleets (`csmartClear`, `cclearFleets`, `cclearAllFleets`), remove modular ships (`cclearModularShips`), and report fleets (`cfleetReport`, `listNearbyFleets`).
 
 ## Required workflow
 

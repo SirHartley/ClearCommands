@@ -4,7 +4,7 @@
     "author": "SirHartley",
     "version": "1.0.g",
     "description": "Additional Console Commands to get rid of pesky hobbits and other fleets.",
-    "gameVersion": "0.98a",
+    "gameVersion": "0.98.5a-RC6",
     "utility":"true",
     "jars":["jars/ClearCommands.jar"],
 }

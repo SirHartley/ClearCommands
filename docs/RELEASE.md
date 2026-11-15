@@ -11,7 +11,7 @@ How ClearCommands is built, packaged and published. Nothing here runs unless a r
 | Version file | `ClearCommands.version` | Online Version Checker file on `master`, forum thread `19210`, registered in `data/config/version/version_files.csv`; stamped at packaging, committed back after a release |
 | Release builder | `jars/src/clearcommands/tools/ReleaseBuild.java` | `build` and `package`, run with `java <file>` |
 | Builder checks | `jars/src/clearcommands/tools/ReleaseBuildChecks.java` | Headless checks of changelog parsing, stamping, file filtering and the command list |
-| Build libraries | `lib/` | `starfarer.api.jar`, `lwjgl.jar`, `lwjgl_util.jar`, `json.jar`, `log4j-1.2.9.jar` (game `0.98a-RC8`) and `lw_Console.jar` (Console Commands), copied from Industrial.Evolution's `lib/` |
+| Build libraries | `lib/` | `starfarer.api.jar`, `lwjgl.jar`, `lwjgl_util.jar`, `json.jar`, `log4j-1.2.9.jar` (game `0.98.5a-RC6` for `starfarer.api.jar`, `0.98a-RC8` for the others, unchanged in 0.98.5a) and `lw_Console.jar` (Console Commands), copied from Industrial.Evolution's `lib/` |
 | Release jar | `jars/release/ClearCommands.jar` | Built by `build`, gitignored, runtime classes only; shipped as `jars/ClearCommands.jar` |
 | Release workflow | `.github/workflows/release.yml` | Manual only: preview without a version, publish with one |
 
@@ -50,7 +50,7 @@ java jars/src/clearcommands/tools/ReleaseBuild.java package 1.0.h    # release
 - Ships Git-tracked files only: `mod_info.json`, `ClearCommands.version`, `Changelog`, `_clearcommands_icon.png` (LunaLib loads it from the mod root, see `data/config/LunaSettingsConfig.json`), `data/` (`csv json shader ship wpn proj system variant skin`), `graphics/` (`png jpg jpeg`), `sounds/` (`ogg wav`) and the release jar as `jars/ClearCommands.jar`. Source, `lib/`, docs, IDE, agent and workflow files, and any path under a dot, `unused`, `unedited`, `tools` or `docs` directory are left out.
 - Fails if a required file (`Changelog`, `mod_info.json`, the version file, the icon, `data/console/commands.csv`, `data/config/LunaSettingsConfig.json`, `data/config/version/version_files.csv`) is missing.
 - Output in `out/release/`: `ClearCommands-<version>.zip` (one `ClearCommands/` folder, sorted, fixed timestamps), `release-notes.md`, the stamped version file and `version.txt`.
-- Stamping changes the download name from the old `ClearCommands<version>.zip` to `ClearCommands-<version>.zip`. The committed version file still names `1.0.g`'s old asset until the next release.
+- Stamping sets the download name to `ClearCommands-<version>.zip`.
 
 ## Publish
 
