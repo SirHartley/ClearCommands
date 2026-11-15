@@ -21,7 +21,7 @@ The release jar is built in CI from `lib/` and never committed, as in Tidy.Panel
 
 ## Versions
 
-Versions use `major.minor.letter`: the first number for a major release, the second for changes players will notice, the letter for fixes and small patches. Reset the lower parts when a higher one changes. Current public version `1.0.g`. The next change opens a `- UNRELEASED` section above it; ask the user which version it is if it has not been chosen.
+Versions use `major.minor.letter`: the first number for a major release, the second for changes players will notice, the letter for fixes and small patches. Reset the lower parts when a higher one changes. Current public version `1.0.h`. The next change opens a `- UNRELEASED` section above it; ask the user which version it is if it has not been chosen.
 
 ## Build the release jar
 
